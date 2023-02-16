@@ -22,6 +22,7 @@
 	import { mLogPageview } from '$ts/helpers/loggers';
 	import { setCookie } from '$ts/helpers/setCookie';
 	import { appVersion } from '$ts/stores/appVersion';
+	import Logo from '$components/Logo.svelte';
 
 	export let data: LayoutData;
 	setLocale(data.locale);
@@ -122,7 +123,14 @@
 		? `min-height: ${innerHeight}px`
 		: ''}"
 >
-	<Navbar />
+	<div class="w-full flex-1 flex flex-col justify-center items-center min-h-screen">
+		<div class="flex flex-col items-center justify-center my-auto max-w-sm text-center">
+			<Logo class="w-16 h-16" />
+			<p class="px-6 mt-5 font-bold text-2xl">Under maintenance</p>
+			<p class="mt-2 text-c-on-bg/60">We're migrating our database, we'll be back in 1-2 hours.</p>
+		</div>
+	</div>
+	<!-- <Navbar />
 	<main class="w-full flex-1 flex flex-col relative break-words">
 		<slot />
 	</main>
@@ -134,5 +142,5 @@
 	<div
 		id="tooltip-container"
 		class="absolute overflow-x-hidden left-0 top-0 w-full h-full pointer-events-none"
-	/>
+	/> -->
 </div>
