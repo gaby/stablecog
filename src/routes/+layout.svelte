@@ -124,10 +124,11 @@
 		: ''}"
 >
 	<div class="w-full flex-1 flex flex-col justify-center items-center min-h-screen">
-		<div class="flex flex-col items-center justify-center my-auto max-w-sm text-center">
+		<div class="flex flex-col items-center justify-center my-auto max-w-sm text-center px-6 py-6">
 			<Logo class="w-16 h-16" />
-			<p class="px-6 mt-5 font-bold text-2xl">Under maintenance</p>
+			<p class="mt-5 font-bold text-2xl">Under maintenance</p>
 			<p class="mt-2 text-c-on-bg/60">We're migrating our database, we'll be back in 1-2 hours.</p>
+			<div class="w-full h-[4vh]" />
 		</div>
 	</div>
 	<!-- <Navbar />
