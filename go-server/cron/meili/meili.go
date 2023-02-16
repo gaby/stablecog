@@ -84,6 +84,8 @@ func SyncMeili() {
 		generationsMeili = append(generationsMeili, newG)
 	}
 
+	log.Printf("-- MeiliWorker - Indexing %d generations", len(generationsMeili))
+
 	_, errMeili := shared.Meili.Index("generation_g").AddDocuments(generationsMeili)
 	if errMeili != nil {
 		log.Printf("-- MeiliWorker - Meili error: %v", errMeili)
