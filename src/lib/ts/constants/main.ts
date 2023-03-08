@@ -303,6 +303,5 @@ export const eurCountryCodes = [
 	'RO',
 	'SE',
 	'SI',
-	'SK',
-	'TR'
+	'SK'
 ];
