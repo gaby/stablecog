@@ -26,8 +26,14 @@ export const generationModels: {
 		name: string;
 		supportedSchedulerIds: TAvailableSchedulerId[];
 		active?: boolean;
+		img2imgNotSupported?: boolean;
 	};
 } = {
+	'0a99668b-45bd-4f7e-aa9c-f9aaa41ef13b': {
+		name: 'FLUX.1',
+		supportedSchedulerIds: sdSharedSchedulerIds,
+		img2imgNotSupported: true
+	},
 	'b6c1372f-31a7-457c-907c-d292a6ffef97': {
 		name: 'Luna Diffusion',
 		supportedSchedulerIds: sdSharedSchedulerIds
@@ -92,7 +98,7 @@ export const generationModels: {
 } as const;
 
 export const generationModelIdDefault: TAvailableGenerationModelId =
-	'986d447d-c38b-4218-a2c8-6e0b691f47ec';
+	'0a99668b-45bd-4f7e-aa9c-f9aaa41ef13b';
 
 export const availableGenerationModelIds = Object.keys(generationModels).filter(
 	(k) => generationModels[k].active !== false
@@ -114,6 +120,11 @@ export const availableModelIdDropdownItems = derived(
 	modelIdToDisplayName,
 	($modelIdToDisplayName) => {
 		const items: TTab<TAvailableGenerationModelId>[] = [
+			{
+				label: $modelIdToDisplayName['0a99668b-45bd-4f7e-aa9c-f9aaa41ef13b'],
+				value: '0a99668b-45bd-4f7e-aa9c-f9aaa41ef13b',
+				isNew: true
+			},
 			{
 				label: $modelIdToDisplayName['986d447d-c38b-4218-a2c8-6e0b691f47ec'],
 				value: '986d447d-c38b-4218-a2c8-6e0b691f47ec'

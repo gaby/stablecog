@@ -278,7 +278,7 @@
 			data.model_id !== null && generationModels[data.model_id]?.name
 				? `Create AI art with ${
 						generationModels[data.model_id].name
-					} on Stablecog: Free, multilingual and open-source AI image generator using Stable Diffusion and Kandinsky.`
+					} on Stablecog: Free, multilingual and open-source AI image generator using Stable Diffusion, FLUX, and Kandinsky.`
 				: metaDescriptionDefault,
 		image_url: data.model_id
 			? getModelPreviewImageUrl(data.model_id)
@@ -317,7 +317,6 @@
 											paddingRight={6}
 											paddingTop={6}
 											paddingBottom={6}
-											hasExtraPadding
 											{pinnedFullOutputs}
 											noLoadingSpinnerAlignmentAdjustment
 											hasPlaceholder

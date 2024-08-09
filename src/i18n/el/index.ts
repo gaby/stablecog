@@ -88,6 +88,7 @@ const es: Translation = {
 				'Για να αφαιρέσετε τα ανεπιθύμητα αποτελέσματα από την εικόνα. Κάνει το αντίθετο από αυτό που κάνει η περιγραφή.'
 		},
 		ImageInput: {
+			NotSupported: 'Not supported by the model',
 			Paragraph: 'Κάντε κλικ ή αποθέστε την εικόνα σας εδώ',
 			Title: 'Μεταφόρτωση εικόνας'
 		},
@@ -393,6 +394,7 @@ const es: Translation = {
 			'b6c1372f-31a7-457c-907c-d292a6ffef97': {
 				realName: 'Luna Diffusion'
 			},
+			'0a99668b-45bd-4f7e-aa9c-f9aaa41ef13b': { realName: 'FLUX.1' },
 			'22b0857d-7edc-4d00-9cd9-45aa509db093': {
 				realName: 'Kandinsky'
 			},

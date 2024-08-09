@@ -240,6 +240,10 @@ type RootTranslation = {
 		}
 		ImageInput: {
 			/**
+			 * N​o​t​ ​s​u​p​p​o​r​t​e​d​ ​b​y​ ​t​h​e​ ​m​o​d​e​l
+			 */
+			NotSupported: string
+			/**
 			 * C​l​i​c​k​ ​o​r​ ​d​r​o​p​ ​y​o​u​r​ ​i​m​a​g​e​ ​h​e​r​e
 			 */
 			Paragraph: string
@@ -1167,6 +1171,12 @@ type RootTranslation = {
 			'b6c1372f-31a7-457c-907c-d292a6ffef97': {
 				/**
 				 * L​u​n​a​ ​D​i​f​f​u​s​i​o​n
+				 */
+				realName: string
+			}
+			'0a99668b-45bd-4f7e-aa9c-f9aaa41ef13b': {
+				/**
+				 * F​L​U​X​.​1
 				 */
 				realName: string
 			}
@@ -3618,6 +3628,10 @@ export type TranslationFunctions = {
 		}
 		ImageInput: {
 			/**
+			 * Not supported by the model
+			 */
+			NotSupported: () => LocalizedString
+			/**
 			 * Click or drop your image here
 			 */
 			Paragraph: () => LocalizedString
@@ -4522,6 +4536,12 @@ export type TranslationFunctions = {
 			'b6c1372f-31a7-457c-907c-d292a6ffef97': {
 				/**
 				 * Luna Diffusion
+				 */
+				realName: () => LocalizedString
+			}
+			'0a99668b-45bd-4f7e-aa9c-f9aaa41ef13b': {
+				/**
+				 * FLUX.1
 				 */
 				realName: () => LocalizedString
 			}

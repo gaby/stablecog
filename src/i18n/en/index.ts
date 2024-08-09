@@ -82,7 +82,11 @@ const en: BaseTranslation = {
 			Paragraph:
 				'To remove unwanted things from the image. It does the opposite of what the prompt does.'
 		},
-		ImageInput: { Paragraph: 'Click or drop your image here', Title: 'Upload Image' },
+		ImageInput: {
+			NotSupported: 'Not supported by the model',
+			Paragraph: 'Click or drop your image here',
+			Title: 'Upload Image'
+		},
 		SeedInput: {
 			Title: 'Seed',
 			Placeholder: 'Seed number',
@@ -381,6 +385,7 @@ const en: BaseTranslation = {
 			'b6c1372f-31a7-457c-907c-d292a6ffef97': {
 				realName: 'Luna Diffusion'
 			},
+			'0a99668b-45bd-4f7e-aa9c-f9aaa41ef13b': { realName: 'FLUX.1' },
 			'22b0857d-7edc-4d00-9cd9-45aa509db093': {
 				realName: 'Kandinsky'
 			},

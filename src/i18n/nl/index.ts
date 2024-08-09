@@ -83,6 +83,7 @@ const nl: Translation = {
 				'Om ongewenste dingen uit de afbeelding te verwijderen. Doet het tegenovergestelde van wat de prompt doet.'
 		},
 		ImageInput: {
+			NotSupported: 'Not supported by the model',
 			Paragraph: 'Click or drop your image here',
 			Title: 'Upload Afbeelding'
 		},
@@ -385,6 +386,7 @@ const nl: Translation = {
 			'b6c1372f-31a7-457c-907c-d292a6ffef97': {
 				realName: 'Luna Diffusion'
 			},
+			'0a99668b-45bd-4f7e-aa9c-f9aaa41ef13b': { realName: 'FLUX.1' },
 			'22b0857d-7edc-4d00-9cd9-45aa509db093': {
 				realName: 'Kandinsky'
 			},
